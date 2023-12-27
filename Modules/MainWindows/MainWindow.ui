@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>900</width>
+    <height>700</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>QMedia</string>
+  </property>
+  <widget class="QWidget" name="QWidget_centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QTabWidget" name="QTabWidget_tabWidget">
+      <widget class="Photo" name="QWidget_Tab_Photo">
+       <attribute name="title">
+        <string>Photo</string>
+       </attribute>
+      </widget>
+      <widget class="MediaPlayer" name="QWidget_Tab_MediaPlayer">
+       <attribute name="title">
+        <string>Media Player</string>
+       </attribute>
+      </widget>
+      <widget class="MediaRecorder" name="QWidget_Tab_MediaRecorder">
+       <attribute name="title">
+        <string>Media Recorder</string>
+       </attribute>
+      </widget>
+      <widget class="QWidget" name="QWidget_Tab_Credits">
+       <attribute name="title">
+        <string>Credits</string>
+       </attribute>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QStatusBar" name="QStatusBar_statusBar"/>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>Photo</class>
+   <extends>QWidget</extends>
+   <header>Photo.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>MediaPlayer</class>
+   <extends>QWidget</extends>
+   <header>MediaPlayer.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>MediaRecorder</class>
+   <extends>QWidget</extends>
+   <header>MediaRecorder.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

@@ -1,0 +1,3 @@
+add_subdirectory(Photo)
+add_subdirectory(MediaPlayer)
+add_subdirectory(MediaRecorder)
