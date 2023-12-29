@@ -7,6 +7,58 @@
 
 void MainWindow::method_ConnectEvents()
 {
+    // QActions - File
+    connect(
+        ui->QAction_OpenImage,
+        &QAction::triggered,
+        this,
+        &MainWindow::slot_QActionOpenImage
+        );
+
+    connect(
+        ui->QAction_OpenMedia,
+        &QAction::triggered,
+        this,
+        &MainWindow::slot_QActionOpenMedia
+        );
+
+    connect(
+        ui->QAction_Exit,
+        &QAction::triggered,
+        this,
+        &MainWindow::slot_QActionExit
+        );
+
+    // QActions - View
+    connect(
+        ui->QActionPhotoTab,
+        &QAction::triggered,
+        this,
+        &MainWindow::slot_QActionViewPhotoTab
+        );
+
+    connect(
+        ui->QActionMediaPlayerTab,
+        &QAction::triggered,
+        this,
+        &MainWindow::slot_QActionViewMediaPlayerTab
+        );
+
+    connect(
+        ui->QAction_MediaRecorderTab,
+        &QAction::triggered,
+        this,
+        &MainWindow::slot_QActionViewMediaRecorderTab
+        );
+
+    connect(
+        ui->QAction_CreditsTab,
+        &QAction::triggered,
+        this,
+        &MainWindow::slot_QActionViewMediaCreditTab
+        );
+
+    // Modules
     connect(
         ui->QWidget_Tab_Photo,
         &Photo::signal_UpdateStatusBar,

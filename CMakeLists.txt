@@ -36,6 +36,7 @@ include_directories(
     ${CMAKE_CURRENT_SOURCE_DIR}/Modules/Pages/Photo
     ${CMAKE_CURRENT_SOURCE_DIR}/Modules/Pages/MediaPlayer
     ${CMAKE_CURRENT_SOURCE_DIR}/Modules/Pages/MediaRecorder
+    ${CMAKE_CURRENT_SOURCE_DIR}/Modules/Pages/Credits
 )
 
 # List of subfolders.
@@ -84,6 +85,7 @@ target_link_libraries(${PROJECT_NAME} PUBLIC
     Photo
     MediaPlayer
     MediaRecorder
+    Credits
 )
 
 # Qt for iOS sets MACOSX_BUNDLE_GUI_IDENTIFIER automatically since Qt 6.1.

@@ -68,6 +68,9 @@ signals:
     void signal_ClearStatusBar();
 
     // Slots;
+public slots:
+    void slot_QAction_MediaPlayer_OpenFile_Triggered();
+
 private slots:
     void slot_QToolButton_MediaPlayer_OpenFile_Pressed();
     void slot_QToolButton_MediaPlayer_Play_Pressed();

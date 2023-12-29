@@ -76,6 +76,9 @@ signals:
     void signal_UpdateStatusBar(const QString &message, int timeout = int(0));
     void signal_ClearStatusBar();
 
+public slots:
+    void slot_QAction_OpenImage_Triggered();
+
 private slots:
     void slot_QPushButton_Capture_Clicked();
     void slot_QPushButton_SaveAs_Clicked();

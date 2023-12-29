@@ -2,6 +2,11 @@
 #include "ui_MediaPlayer.h"
 
 
+void MediaPlayer::slot_QAction_MediaPlayer_OpenFile_Triggered()
+{
+    slot_QToolButton_MediaPlayer_OpenFile_Pressed();
+}
+
 void MediaPlayer::slot_QToolButton_MediaPlayer_OpenFile_Pressed()
 {
     QString platformVideoFolderPath = QStandardPaths::writableLocation(

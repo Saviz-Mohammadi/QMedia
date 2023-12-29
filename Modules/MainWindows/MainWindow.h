@@ -36,6 +36,14 @@ signals:
 
     // Slots
 private slots:
+    void slot_QActionViewPhotoTab();
+    void slot_QActionViewMediaPlayerTab();
+    void slot_QActionViewMediaRecorderTab();
+    void slot_QActionViewMediaCreditTab();
+    void slot_QActionOpenImage();
+    void slot_QActionOpenMedia();
+    void slot_QActionExit();
+
     void slot_UpdateStatusBar(const QString &message, int timeout = int(0));
     void slot_ClearStatusBar();
 };

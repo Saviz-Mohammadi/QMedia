@@ -66,3 +66,42 @@ void MainWindow::slot_ClearStatusBar()
 
     ui->QStatusBar_statusBar->clearMessage();
 }
+
+void MainWindow::slot_QActionViewPhotoTab()
+{
+    ui->QTabWidget_tabWidget->setCurrentIndex(0);
+}
+
+void MainWindow::slot_QActionViewMediaPlayerTab()
+{
+    ui->QTabWidget_tabWidget->setCurrentIndex(1);
+}
+
+void MainWindow::slot_QActionViewMediaRecorderTab()
+{
+    ui->QTabWidget_tabWidget->setCurrentIndex(2);
+}
+
+void MainWindow::slot_QActionViewMediaCreditTab()
+{
+    ui->QTabWidget_tabWidget->setCurrentIndex(3);
+}
+
+void MainWindow::slot_QActionOpenImage()
+{
+    slot_QActionViewPhotoTab();
+
+    ui->QWidget_Tab_Photo->slot_QAction_OpenImage_Triggered();
+}
+
+void MainWindow::slot_QActionOpenMedia()
+{
+    slot_QActionViewMediaPlayerTab();
+
+    ui->QWidget_Tab_MediaPlayer->slot_QAction_MediaPlayer_OpenFile_Triggered();
+}
+
+void MainWindow::slot_QActionExit()
+{
+    this->close();
+}

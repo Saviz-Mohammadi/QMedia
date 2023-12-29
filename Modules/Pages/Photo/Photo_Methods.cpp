@@ -505,6 +505,11 @@ void Photo::method_OpenImage(const QString &startLocation)
     method_DisplayImageInformation();
 }
 
+void Photo::slot_QAction_OpenImage_Triggered()
+{
+    slot_QPushButton_OpenImage_Clicked();
+}
+
 void Photo::method_HideWindows()
 {
     foreach(QMainWindow *mainWindow, m_QList_Windows)
